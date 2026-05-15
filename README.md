@@ -1,5 +1,14 @@
 # 📊 月營收 YoY 回測分析
 
+![Profile views](https://komarev.com/ghpvc/?username=mjib007&label=Profile%20views&color=4c8eda&style=flat)
+[![Stars](https://img.shields.io/github/stars/mjib007/revenue-yoy-backtest?style=flat&color=yellow)](https://github.com/mjib007/revenue-yoy-backtest/stargazers)
+[![Forks](https://img.shields.io/github/forks/mjib007/revenue-yoy-backtest?style=flat&color=blue)](https://github.com/mjib007/revenue-yoy-backtest/network/members)
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Platform](https://img.shields.io/badge/Platform-Google%20Colab-orange)
+![Data](https://img.shields.io/badge/Data-FinMind%20%7C%20yfinance-green)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+![Status](https://img.shields.io/badge/status-active-success)
+
 > **核心問題：當某股票月營收年增率（YoY）超過門檻時，買入持有 N 天的勝率有多少？**
 
 本專案提供三個版本的 Jupyter Notebook，適合不同程度的使用者。
