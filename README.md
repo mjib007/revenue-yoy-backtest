@@ -97,6 +97,69 @@
 
 ---
 
+
+---
+
+## 💻 進階：在自己的電腦上執行
+
+學會在 Colab 使用之後，想在自己電腦跑？跟著以下步驟設定環境。
+
+### 第一步：安裝 Anaconda
+
+Anaconda 是一個幫你管理 Python 環境的工具，安裝完就自動包含 Python 和 Jupyter Notebook。
+
+1. 前往 👉 https://www.anaconda.com/download
+2. 選擇你的作業系統（Windows / Mac），點擊下載
+3. 執行安裝檔，一路按「Next」，最後按「Install」
+4. 安裝完成後，開啟「**Anaconda Navigator**」確認安裝成功
+
+> ⏱️ 安裝約需 5–10 分鐘
+
+---
+
+### 第二步：下載程式碼
+
+1. 回到這個 GitHub 頁面
+2. 點右上角綠色「**Code**」按鈕
+3. 選「**Download ZIP**」
+4. 解壓縮到你想放的資料夾，例如桌面的 `revenue-yoy-backtest` 資料夾
+
+---
+
+### 第三步：開啟 Jupyter Notebook
+
+1. 開啟「**Anaconda Navigator**」
+2. 點「**Jupyter Notebook**」→「**Launch**」
+3. 瀏覽器會自動開啟，找到你剛才解壓縮的資料夾
+4. 點進去，選擇任一個 `.ipynb` 檔案開啟
+
+---
+
+### 第四步：安裝需要的套件
+
+第一次執行時，需要安裝套件。開啟 `01_月營收YoY回測_教材版.ipynb`，執行第一個 Cell（Step 1 安裝套件），等待安裝完成即可。
+
+> ⚠️ 只需要安裝一次，之後每次執行不需要重複安裝。
+
+---
+
+### 第五步（進階）：存成 .py 在終端機執行
+
+如果你想把程式存成 `.py` 直接在終端機跑：
+
+1. 開啟「**Anaconda Prompt**」（Windows）或「**Terminal**」（Mac）
+2. 切換到你的資料夾：
+   ```
+   cd 桌面/revenue-yoy-backtest
+   ```
+3. 執行程式：
+   ```
+   python 03_月營收YoY回測_指令輸入版.py
+   ```
+4. 看到輸入框後，輸入股票指令，按 Enter 開始回測
+
+> 💡 `.ipynb` 要轉成 `.py`，在 Jupyter Notebook 點「**檔案**」→「**下載**」→「**下載 .py**」即可。
+
 ## ⚠️ 免責聲明
 
 本專案僅供學術研究與程式教學用途，所有回測結果均基於歷史資料，不代表未來績效，不構成任何投資建議。投資有風險，請自行評估。
