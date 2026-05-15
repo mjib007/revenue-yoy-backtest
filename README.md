@@ -10,9 +10,9 @@
 
 | 版本 | 說明 | 開啟 |
 |------|------|------|
-| 📖 教材版 | 有完整步驟說明，適合初次學習 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/blob/main/01_月營收YoY回測_教材版.ipynb) |
-| ⚡ 單一Cell版 | 改好參數直接跑，適合快速使用 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/blob/main/02_月營收YoY回測_單Cell版.ipynb) |
-| 💬 指令輸入版 | 用自然語言下指令，適合 Vibe Coding | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/blob/main/03_月營收YoY回測_指令輸入版.ipynb) |
+| 📖 教材版 | 有完整步驟說明，適合初次學習 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mjib007/revenue-yoy-backtest/blob/main/01_月營收YoY回測_教材版.ipynb) |
+| ⚡ 單一Cell版 | 改好參數直接跑，適合快速使用 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mjib007/revenue-yoy-backtest/blob/main/02_月營收YoY回測_單Cell版.ipynb) |
+| 💬 指令輸入版 | 用自然語言下指令，適合 Vibe Coding | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mjib007/revenue-yoy-backtest/blob/main/03_月營收YoY回測_指令輸入版.ipynb) |
 
 > 💡 點擊按鈕後，記得先「**在雲端硬碟中儲存副本**」，才能修改和儲存自己的版本。
 
@@ -84,4 +84,3 @@
 ## 👨‍🏫 關於作者
 
 本專案由**小龍蝦 AI 課程**提供，課程收入全數捐入基金會。
-
