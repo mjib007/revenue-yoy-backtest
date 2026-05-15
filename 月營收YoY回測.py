@@ -202,15 +202,15 @@ def run_revenue_backtest(stock_id, market, yoy_threshold, windows,
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 9), sharex=False)
 
     ax1.plot(price_df.index, price_df["Close"],
-             color="#1f77b4", linewidth=1, label="收盤價")
+             color="#1f77b4", linewidth=1, label="Close Price")
     if not result_df.empty:
         ax1.scatter(
             result_df["announce_date"], result_df["buy_price"],
             color="red", marker="v", s=80, zorder=5,
-            label=f"買入點（YoY>{yoy_threshold}%，共{len(result_df)}次）"
+            label=f"Buy Signal (YoY>{yoy_threshold}%, n={len(result_df)})"
         )
-    ax1.set_title(f"{stock_id} 股價走勢與月營收 YoY 觸發點", fontsize=13)
-    ax1.set_ylabel("股價（元）")
+    ax1.set_title(f"{stock_id} Price & Revenue YoY Trigger Points", fontsize=13)
+    ax1.set_ylabel("Price (TWD)")
     ax1.legend()
     ax1.grid(alpha=0.3)
 
@@ -218,9 +218,9 @@ def run_revenue_backtest(stock_id, market, yoy_threshold, windows,
     ax2.bar(rev["announce_date"], rev["revenue_yoy"],
             color=colors, width=20, alpha=0.7)
     ax2.axhline(yoy_threshold, color="orange", linewidth=1.5,
-                linestyle="--", label=f"門檻 {yoy_threshold}%")
+                linestyle="--", label=f"Threshold {yoy_threshold}%")
     ax2.axhline(0, color="black", linewidth=0.8)
-    ax2.set_title(f"{stock_id} 月營收 YoY（%）", fontsize=13)
+    ax2.set_title(f"{stock_id} Monthly Revenue YoY (%)", fontsize=13)
     ax2.set_ylabel("YoY (%)")
     ax2.legend()
     ax2.grid(alpha=0.3)
