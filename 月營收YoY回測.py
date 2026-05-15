@@ -112,8 +112,10 @@ def run_revenue_backtest(stock_id, market, yoy_threshold, windows,
 
     rev["date"]        = pd.to_datetime(rev["date"])
     rev                = rev.sort_values("date").reset_index(drop=True)
-    rev["revenue_yoy"] = rev["revenue"].pct_change(12) * 100
-    rev                = rev.dropna(subset=["revenue_yoy"]).reset_index(drop=True)
+    # FinMind 的 date 欄位是公告日期（次月初），往前推一個月才是真正的營收月份
+    rev["revenue_month"] = rev["date"] - pd.DateOffset(months=1)
+    rev["revenue_yoy"]   = rev["revenue"].pct_change(12) * 100
+    rev                  = rev.dropna(subset=["revenue_yoy"]).reset_index(drop=True)
     print(f"✅ 月營收：共 {len(rev)} 筆（{rev['date'].min().date()} ～ {rev['date'].max().date()}）")
 
     # Step 2：從 yfinance 抓股價，計算公告日（次月10日）
