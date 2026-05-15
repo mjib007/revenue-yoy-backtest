@@ -9,6 +9,10 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 ![Status](https://img.shields.io/badge/status-active-success)
 
+> 🦞 **這是一個學習如何自己打造小龍蝦 OpenClaw AI 助理的學習教材。**
+> 透過「月營收 YoY 回測」這個實際功能，帶你從零開始，一步一步理解小龍蝦的每一個工具是怎麼設計出來的。
+> 學會之後，把程式碼存成 `.py` 檔案，就可以在自己的電腦上直接執行囉！
+
 > **核心問題：當某股票月營收年增率（YoY）超過門檻時，買入持有 N 天的勝率有多少？**
 
 本專案提供三個版本的 Jupyter Notebook，適合不同程度的使用者。
